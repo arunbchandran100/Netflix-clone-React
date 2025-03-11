@@ -1,14 +1,21 @@
-import React from 'react'
-import './Home.css'
-import  Navbar  from "../../components/Navbar/Navbar";
+import React from "react";
+import "./Home.css";
+import Navbar from "../../components/Navbar/Navbar";
 import hero from "../../assets/hero_banner.jpg";
 import hero_title from "../../assets/hero_title.png";
 import play_icon from "../../assets/play_icon.png";
 import info_icon from "../../assets/info_icon.png";
-import TitleCards  from '../../components/TitleCards/TitleCards';
-import Footer from '../../components/Footer/Footer';
+import TitleCards from "../../components/TitleCards/TitleCards";
+import Footer from "../../components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
-function Home(){
+function Home() {
+  const navigate = useNavigate();
+
+  const handlePlay = (id) => {
+    navigate(`/player/${id}`);
+  };
+
   return (
     <>
       <Navbar />
@@ -22,7 +29,7 @@ function Home(){
             enemy.
           </p>
           <div className="hero-btns">
-            <button className="btn">
+            <button className="btn" onClick={() => handlePlay("some_movie_id")}>
               <img src={play_icon} alt="" />
               Play
             </button>
@@ -45,4 +52,4 @@ function Home(){
   );
 }
 
-export default Home
+export default Home;

@@ -37,7 +37,13 @@ const Player = () => {
 
   return (
     <div className="player">
-      <img src={back_arrow_icon} alt="" onClick={()=> {navigate('/')}} />
+      <img
+        src={back_arrow_icon}
+        alt=""
+        onClick={() => {
+          navigate("/");
+        }}
+      />
       <iframe
         width="90%"
         height="90%"
@@ -47,7 +53,9 @@ const Player = () => {
         allowFullScreen
       ></iframe>
       <div className="player-info">
-        <p>{apiData.published_at.slice(0,10)}</p>
+        {console.log("web player")}
+        {console.log(apiData)}
+        <p>{apiData.published_at.slice(0, 10)}</p>
         <p>{apiData.name}</p>
         <p>{apiData.type}</p>
       </div>
