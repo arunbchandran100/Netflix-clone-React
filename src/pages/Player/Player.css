@@ -23,4 +23,16 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    font-size: 14px;
+}
+
+@media (max-width:800px){
+    .player-info p{
+        font-size: 12px
+    }
+}
+@media (max-width:500px){
+    .player-info p{
+        font-size: 10px
+    }
 }
