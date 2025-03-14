@@ -2,7 +2,7 @@ import React, {  useState } from "react";
 import './Login.css'
 import logo from '../../assets/logo.png'
 import {login, signup} from '../../firebase'
-import netflix_spinner from "../../../public/netflix_spinner.gif";
+import netflix_spinner from "/netflix_spinner.gif";
 
 const Login = () => {
     const [signState, setSignState] = useState('Sign In')
