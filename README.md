@@ -1,2 +1,2 @@
-Hosted Link:-
-https://react-netflix-clone-rouge-ten.vercel.app/
+## 🚀 Hosted Project Link  
+🔗 [Live Demo](https://react-netflix-clone-rouge-ten.vercel.app/)
